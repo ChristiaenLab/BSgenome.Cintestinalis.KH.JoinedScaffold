@@ -1,7 +1,7 @@
 FASTA = JoinedScaffold
 URL = http://ghost.zool.kyoto-u.ac.jp/datas/$(FASTA).zip
 GENOME = Cintestinalis.KH.JoinedScaffold
-RELEASE = JoinedScaffold
+RELEASE = KH_JoinedScaffold
 
 install: BSgenome.$(GENOME).tar.gz
 	R CMD check BSgenome.$(GENOME)
