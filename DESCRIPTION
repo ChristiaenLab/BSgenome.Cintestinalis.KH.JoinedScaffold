@@ -14,5 +14,5 @@ release_name: KH
 source_url: http://ghost.zool.kyoto-u.ac.jp/datas/JoinedScaffold.zip
 organism_biocview: Ciona_intestinalis
 BSgenomeObjname: Cintestinalis
-seqnames: sub("\\.fa","",list.files("KH",pattern="\\.fa"))
-seqs_srcdir: KH
+seqnames: sub("\\.fa","",list.files("KH_JoinedScaffold",pattern="\\.fa"))
+seqs_srcdir: KH_JoinedScaffold
