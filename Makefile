@@ -13,9 +13,11 @@ BSgenome.$(GENOME).tar.gz: BSgenome.$(GENOME)
 BSgenome.$(GENOME): $(FASTA)
 	Rscript forgeGenome.R --fasta $(FASTA) --dir $(RELEASE)
 
-$(FASTA): $(RELEASE)
-	wget -U firefox $(URL)
+$(FASTA): $(FASTA).zip
 	unzip -o $(FASTA).zip
+
+$(FASTA).zip: $(RELEASE)
+	wget -U firefox $(URL)
 
 $(RELEASE):
 	mkdir $(RELEASE)
